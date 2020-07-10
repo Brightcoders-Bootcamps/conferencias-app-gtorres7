@@ -18,7 +18,7 @@ const styles=StyleSheet.create({
       position: 'absolute',
       margin: 20,
       right: 0,
-      bottom: 50,
+      bottom: 80,
     }
   })
 export default FabButton;

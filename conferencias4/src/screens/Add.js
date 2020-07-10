@@ -8,7 +8,7 @@ function Add({navigation}){
    
     return(
       <View >
-        <View style={{padding:20,margin:20,backgroundColor:"white",paddingBottom:500}}>
+        <View style={{padding:20,margin:20,backgroundColor:"white",paddingBottom:500}} >
         <Text style={{
          fontSize:20 
         }}

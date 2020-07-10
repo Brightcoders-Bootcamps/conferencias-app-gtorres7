@@ -3,11 +3,11 @@ import { StyleSheet, View,Text,TextInput,FlatList} from 'react-native';
 import { SafeAreaProvider,useSafeArea } from 'react-native-safe-area-context';
 import { List } from 'react-native-paper';
 import FabButton from "../components/FabButton" 
+import SelectDate from "../screens/SelectDate"
 
 
 
-
-function InvitePeople(navigation){
+function InvitePeople({ navigation: { navigate } }){
   const people=[
     {
      name:"Gibran",
@@ -59,7 +59,7 @@ function InvitePeople(navigation){
          )
        }} 
        keyExtractor={people => people.name}/>
-       <FabButton  onPress={() => navigation.navigate('Add')}/>
+       <FabButton  onPress={() => navigate('SelectDate')}/>
   
        
         </View>
