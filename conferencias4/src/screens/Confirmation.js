@@ -5,7 +5,7 @@ function Confirmation(){
     return(
         <View>
             <Text>Confirmation Screen</Text>
-            <Button></Button>
+            
         </View>
     );
 }

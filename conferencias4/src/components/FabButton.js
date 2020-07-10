@@ -1,27 +1,24 @@
 
 import React from 'react';
-import { StyleSheet, View} from 'react-native';
+import { StyleSheet, View,TouchableOpacity} from 'react-native';
 import { FAB } from 'react-native-paper';
-function FabButton({navigation})
+
+function FabButton({onPress})
 {
   return(
-    <View>
-      
     <FAB
+    onPress={onPress}
     style={styles.fab}
-      icon="plus"
-      
+      icon="plus" 
     />
-    </View>
-    
   );
 } 
 const styles=StyleSheet.create({
     fab: {
       position: 'absolute',
-      margin: 60,
+      margin: 20,
       right: 0,
-      bottom: 400,
+      bottom: 50,
     }
   })
 export default FabButton;
